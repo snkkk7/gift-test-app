@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <script defer type="module" src="moduls/renderProducts.js"></script>
+    <script defer type="module" src="moduls/renderGifts.js"></script>
+    <script defer type="module" src="moduls/index.js"></script>
+    <title>Gift studio</title>
+</head>
+<body>
+    <!-- <header class="header">
+        <div class="container">
+          <div class="header__inner">
+              <p class="icon">Gift studio</p>
+            <div class="header__bottom">
+              <h3 class="header__title">Соберем вам подарок!</h3>
+              <a class="header__link" id="creatBoxBtn" href="#">Создать подарок</a>
+              <a class="header__link" id="chooseBoxBtn" href="#">Выбрать готовый</a>
+            </div>
+          </div>
+        </div>
+      </header> -->
+      <section class="gifts">
+        <h3 class="title">Готовые решение</h3>
+        <div class="container">
+          <div id="innerGifts" class="gifts__inner"></div>
+      </section>
+      <section class="catalog">
+          <h3 class="title">Католог</h3>
+          <div class="container">
+            <div class="catalog__box-btns">
+              <button id="sort-drinks" class="catalog__btn-sort catalog__btn-sort--drink">Показать только напитки</button>
+              <button id="sort-chocolate" class="catalog__btn-sort catalog__btn-sort--choco">Показать только шоколадки</button>
+              <button id="sort-sweets" class="catalog__btn-sort catalog__btn-sort--sweet">Показать только конфеты</button>
+              <button id="return-all-product" class="catalog__btn-show">показать все обратно</button>
+              <button id="generation-random-box" class="catalog__btn-generation">Сгенирировать случайную коробку</button>
+            </div>
+      
+            <!-- <button id="save-box" class="catalog__btn-save">Сохранить</button> -->
+            <div id="catalogInner" class="catalog__inner">
+            </div>
+            <div class="catalog__workshop">
+              <h3 class="title">Что вы добавили в подарок</h3>    
+              <h3 class="subtitle">Сумма покупки составляет: <span id="price">0</span> RUB</h3>
+              <div class="catalog__workshop-btns">
+                <button id="clear-cort" class="catalog__btn-clear">Очистить коробку</button>
+                <button id="clear-cort-drink" class="catalog_btn-clear" >Очистить только напитки</button>
+                <button id="clear-cort-sweets"  class="catalog__btn-clear" >Очистить только сладости</button>
+                <button id="clear-cort-choco" class="catalog__btn-clear">Очистить только шоколадки</button>
+              </div>
+              <div id="catalogWorkShopList" class="catalog__workshop-list">
+                <div id="colChoco" class="catalog__workshop-column">
+                  <h3 class="subtitle">Вы брали из шоколадок</h3>
+                  <div class="catalog__workshop-choco">
+                    
+                  </div>
+                </div>
+                <div id="colSweet" class="catalog__workshop-column">
+                <h3 class="subtitle">Вы брали из конфет</h3>
+                  <div class="catalog__workshop-sweet">
+                  
+                  </div>
+                </div>
+              <div id="colDrink" class="catalog__workshop-column">
+                <h3 class="subtitle">Вы брали из напитков</h3>
+                  <div class="catalog__workshop-drink">
+                  
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </section>
+</body>
+</html>
